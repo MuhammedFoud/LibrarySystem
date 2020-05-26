@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="216.0" prefWidth="419.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="librarysystem.ui.addMember.MemberAddController">
+    <stylesheets>
+        <URL value="@memberadd.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="300.0" prefWidth="419.0">
+         <children>
+            <TextField fx:id="Name" promptText="Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="userID" layoutX="20.0" layoutY="30.0" promptText="User / Member ID">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="Password" layoutX="10.0" layoutY="55.0" promptText="Password">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="Email" layoutX="10.0" layoutY="55.0" promptText="Email">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="55.0" prefWidth="413.0">
+               <children>
+                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#addMember" prefHeight="55.0" prefWidth="165.0" stylesheets="@../addBook/addBook.css" text="Save">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cancelButton" cancelButton="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancel" prefHeight="55.0" prefWidth="165.0" stylesheets="@../addBook/addBook.css" text="Cancel">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
